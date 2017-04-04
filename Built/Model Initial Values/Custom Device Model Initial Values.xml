@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomDevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Custom Device.xsd">
+<XSDVersion Major="2010" Minor="0" Fix="0" Build="0" />
+  <AddMenu>
+    <eng>National Instruments::Model Initial Values</eng>
+    <loc>National Instruments::Model Initial Values</loc>
+  </AddMenu>
+  <Version>1.0</Version>
+  <Type>Asynchronous</Type>
+  <MaxOccurrence>1</MaxOccurrence>
+  <MainPageGUID>D9CF9D53-F010-BBD2-9DAE-080383354651</MainPageGUID>
+  <InitializationVI>
+    <Type>Action</Type>
+    <Item2Launch>
+      <Type>To Common Doc Dir</Type>
+      <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Initialization VI.vi</Path>
+    </Item2Launch>
+  </InitializationVI>
+  <CustomDeviceVI />
+<!--  <CustomDeviceVI>
+		<SourceDistribution>
+			<Source>
+				<SupportedTarget>PharlapWindows</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\Set Model Initial Values\Set Model Initial Values Engine.llb\Set Model Initial Values RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\VeriStand\Custom Devices\Set Model Initial Values\Set Model Initial Values Engine.llb\Set Model Initial Values RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
+		</SourceDistribution>
+	</CustomDeviceVI> -->
+  <Dependencies />
+  <Pages>
+    <Page>
+      <Name>
+        <eng>Model Initial Values</eng>
+        <loc>Model Initial Values</loc>
+      </Name>
+      <DisallowRenaming>true</DisallowRenaming>
+      <GUID>D9CF9D53-F010-BBD2-9DAE-080383354651</GUID>
+      <Glyph>
+			  <Type>To Application Data Dir</Type>
+			  <Path>System Explorer\Glyphs\sim inport.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Main Page.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>CB66F472-A923-4165-AEBC-C7B76607008C</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Add Model(s)</eng>
+            <loc>Add Model(s)</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Add Model RTM.vi</Path>
+          </Item2Launch>
+          <Dependency>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Add Models RTM Dependency.vi</Path>
+            <Behavior>Dynamic</Behavior>
+          </Dependency>
+        </MenuItem>
+        <MenuItem>
+          <GUID>03D3BE0A-1485-13A6-563AEB9BF271825A</GUID>
+          <Type>VI</Type>
+          <MinNrOfChilds>1</MinNrOfChilds>
+          <Name>
+            <eng>Remove Model(s)</eng>
+            <loc>Remove Model(s)</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>Dialogs\Delete Multiple Items.vi</Path>
+          </Item2Launch>
+          <!--<Dependency>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Disable RTM Dependency.vi</Path>
+            <Behavior>Dynamic</Behavior>
+          </Dependency>-->
+        </MenuItem>
+        <MenuItem>
+          <GUID>7755077A-1485-13A6-5674A23FB86277FF</GUID>
+          <Type>Separator</Type>
+          <Name>
+            <eng>.</eng>
+            <loc>.</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>.</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>813DFD37-5B3E-4E8F-A30C-1F1270978B18</GUID>
+          <Type>Action</Type>
+          <MinNrOfChilds>1</MinNrOfChilds>
+          <Name>
+            <eng>Export</eng>
+            <loc>Export</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Export RTM.vi</Path>
+          </Item2Launch>
+          <!--<Dependency>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Disable RTM Dependency.vi</Path>
+            <Behavior>Dynamic</Behavior>
+          </Dependency>-->
+        </MenuItem>
+        <MenuItem>
+          <GUID>745DAE37-72A8-4E68-A512-1111D239556D</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Import</eng>
+            <loc>Import</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Import RTM.vi</Path>
+          </Item2Launch>
+          <Dependency>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Import RTM Dependency.vi</Path>
+            <Behavior>Dynamic</Behavior>
+          </Dependency>
+        </MenuItem>
+      </RunTimeMenu>
+      <ButtonList>
+        <Button>
+          <ID>NIVS_InitValues_AddModels</ID>
+          <Glyph>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Glyphs\Add Model.png</Path>
+          </Glyph>
+          <Type>Action</Type>
+          <ReferencedGUID>CB66F472-A923-4165-AEBC-C7B76607008C</ReferencedGUID>
+          <ButtonText>
+            <eng>Add Model(s)</eng>
+            <loc>Add Model(s)</loc>
+          </ButtonText>
+          <Caption>
+            <eng>Add Model(s)</eng>
+            <loc>Add Model(s)</loc>
+          </Caption>
+          <TipStrip>
+            <eng>Add Model(s)</eng>
+            <loc>Add Model(s)</loc>
+          </TipStrip>
+          <Documentation>
+            <eng></eng>
+            <loc></loc>
+          </Documentation>
+          <Dependency>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Add Models RTM Dependency.vi</Path>
+            <Behavior>Dynamic</Behavior>
+          </Dependency>
+        </Button>
+        <Button>
+          <ID>NIVS_InitValues_RemoveModels</ID>
+          <Glyph>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Glyphs\Remove Model.png</Path>
+          </Glyph>
+          <Type>Action</Type>
+          <ReferencedGUID>03D3BE0A-1485-13A6-563AEB9BF271825A</ReferencedGUID>
+          <ButtonText>
+            <eng>Remove Model(s)</eng>
+            <loc>Remove Model(s)</loc>
+          </ButtonText>
+          <Caption>
+            <eng>Remove Model(s)</eng>
+            <loc>Remove Model(s)</loc>
+          </Caption>
+          <TipStrip>
+            <eng>Remove Model(s)</eng>
+            <loc>Remove Model(s)</loc>
+          </TipStrip>
+          <Documentation>
+            <eng></eng>
+            <loc></loc>
+          </Documentation>
+          <Dependency>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Remove Models Export RTM Dependency.vi</Path>
+            <Behavior>Dynamic</Behavior>
+          </Dependency>
+        </Button>
+        <Button>
+          <ID>NIVS_InitValues_Export</ID>
+          <Glyph>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Glyphs\Export Models.png</Path>
+          </Glyph>
+          <Type>Action</Type>
+          <ReferencedGUID>813DFD37-5B3E-4E8F-A30C-1F1270978B18</ReferencedGUID>
+          <ButtonText>
+            <eng>Export</eng>
+            <loc>Export</loc>
+          </ButtonText>
+          <Caption>
+            <eng>Export</eng>
+            <loc>Export</loc>
+          </Caption>
+          <TipStrip>
+            <eng>Export</eng>
+            <loc>Export</loc>
+          </TipStrip>
+          <Documentation>
+            <eng></eng>
+            <loc></loc>
+          </Documentation>
+          <Dependency>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Remove Models Export RTM Dependency.vi</Path>
+            <Behavior>Dynamic</Behavior>
+          </Dependency>
+        </Button>
+        <Button>
+          <ID>NIVS_InitValues_Import</ID>
+          <Glyph>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Glyphs\Import Models.png</Path>
+          </Glyph>
+          <Type>Action</Type>
+          <ReferencedGUID>745DAE37-72A8-4E68-A512-1111D239556D</ReferencedGUID>
+          <ButtonText>
+            <eng>Import</eng>
+            <loc>Import</loc>
+          </ButtonText>
+          <Caption>
+            <eng>Import</eng>
+            <loc>Import</loc>
+          </Caption>
+          <TipStrip>
+            <eng>Import</eng>
+            <loc>Import</loc>
+          </TipStrip>
+          <Documentation>
+            <eng></eng>
+            <loc></loc>
+          </Documentation>
+          <Dependency>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Import RTM Dependency.vi</Path>
+            <Behavior>Dynamic</Behavior>
+          </Dependency>
+        </Button>
+      </ButtonList>
+      <ActionVIOnDelete>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Main On Delete Action.vi</Path>
+      </ActionVIOnDelete>
+      <ActionVIOnSave>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Main On Save Action.vi</Path>
+      </ActionVIOnSave>
+    </Page>
+    
+    <Page>
+      <Name>
+        <eng>Model Page</eng>
+        <loc>Model Page</loc>
+      </Name>
+      <DisallowRenaming>true</DisallowRenaming>
+      <GUID>806F417C-F0ED-C4A2-47CB-356CC3490174</GUID>
+      <Glyph>
+        <Type>To Application Data Dir</Type>
+        <Path>System Explorer\Glyphs\sim model.png</Path>
+      </Glyph>
+      <Item2Launch>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Model Page.vi</Path>
+      </Item2Launch>
+      <RunTimeMenu>
+        <MenuItem>
+          <GUID>DE7DBB3A-9233-4FA3-8A59-0CB9CDAF0A17</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Add Inport(s)</eng>
+            <loc>Add Inport(s)</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Add Inport RTM.vi</Path>
+          </Item2Launch>
+          <Dependency>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Add Inports RTM Dependency.vi</Path>
+            <Behavior>Dynamic</Behavior>
+          </Dependency>
+        </MenuItem>
+        <MenuItem>
+          <GUID>146064F1-03FF-4D8C-B8F6-728DA818E0EA</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Remove Inport(s)</eng>
+            <loc>Remove Inport(s)</loc>
+          </Name>
+          <Item2Launch>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Remove Inport RTM.vi</Path>
+          </Item2Launch>
+          <Dependency>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Remove Inports RTM Dependency.vi</Path>
+            <Behavior>Dynamic</Behavior>
+          </Dependency>
+        </MenuItem>
+        <MenuItem>
+          <GUID>7755077A-1485-13A6-5674A23FB86277FF</GUID>
+          <Type>Separator</Type>
+          <Name>
+            <eng>.</eng>
+            <loc>.</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>.</Path>
+          </Item2Launch>
+        </MenuItem>
+        <MenuItem>
+          <GUID>77550670-1485-13A6-568B9AB41979630D</GUID>
+          <Type>Action</Type>
+          <Name>
+            <eng>Remove Model</eng>
+            <loc>Remove Model</loc>
+          </Name>
+          <Item2Launch>
+            <Type>Absolute</Type>
+            <Path>Actions\Delete.vi</Path>
+          </Item2Launch>
+        </MenuItem>
+      </RunTimeMenu>
+      <ButtonList>
+        <Button>
+          <ID>NIVS_InitValues_AddInport</ID>
+          <Glyph>
+            <Type>To Application Data Dir</Type>
+            <Path>System Explorer\Glyphs\Add Multiple Alias.png</Path>
+          </Glyph>
+          <Type>Action</Type>
+          <ReferencedGUID>DE7DBB3A-9233-4FA3-8A59-0CB9CDAF0A17</ReferencedGUID>
+          <ButtonText>
+            <eng>Add Inport(s)</eng>
+            <loc>Add Inport(s)</loc>
+          </ButtonText>
+          <Caption>
+            <eng>Add Inport(s)</eng>
+            <loc>Add Inport(s)</loc>
+          </Caption>
+          <TipStrip>
+            <eng>Add Inport(s)</eng>
+            <loc>Add Inport(s)</loc>
+          </TipStrip>
+          <Documentation>
+            <eng></eng>
+            <loc></loc>
+          </Documentation>
+          <Dependency>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Add Inports RTM Dependency.vi</Path>
+            <Behavior>Dynamic</Behavior>
+          </Dependency>
+        </Button>
+        <Button>
+          <ID>NIVS_InitValues_RemoveInport</ID>
+          <Glyph>
+            <Type>To Application Data Dir</Type>
+            <Path>System Explorer\Glyphs\Clear Aliases.png</Path>
+          </Glyph>
+          <Type>Action</Type>
+          <ReferencedGUID>146064F1-03FF-4D8C-B8F6-728DA818E0EA</ReferencedGUID>
+          <ButtonText>
+            <eng>Remove Inport(s)</eng>
+            <loc>Remove Inport(s)</loc>
+          </ButtonText>
+          <Caption>
+            <eng>Remove Inport(s)</eng>
+            <loc>Remove Inport(s)</loc>
+          </Caption>
+          <TipStrip>
+            <eng>Remove Inport(s)</eng>
+            <loc>Remove Inport(s)</loc>
+          </TipStrip>
+          <Documentation>
+            <eng></eng>
+            <loc></loc>
+          </Documentation>
+          <Dependency>
+            <Type>To Common Doc Dir</Type>
+            <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Remove Inports RTM Dependency.vi</Path>
+            <Behavior>Dynamic</Behavior>
+          </Dependency>
+        </Button>
+      </ButtonList>
+      <ActionVIOnDelete>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Model On Delete Action.vi</Path>
+      </ActionVIOnDelete>
+      <ActionVIOnLoad>
+        <Type>To Common Doc Dir</Type>
+        <Path>Custom Devices\Model Initial Values\Model Initial Values Configuration.llb\Model Initial Values - Model On Load Action.vi</Path>
+      </ActionVIOnLoad>
+    </Page>
+  </Pages>
+  <CustomXML>
+    <Dummy></Dummy>
+  </CustomXML>
+</CustomDevice>
